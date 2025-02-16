@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/* Geral */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffcfc;
+}
+
+header .btnsobrenos button {
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Interface */
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  padding: 40px 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 9999;
+  background-color: black;
+}
+
+header .menu {
+  padding: 40px;
+}
+
+header .btn {
+  padding: 40px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 100px;
+}
+
+header .menu nav ul {
+  list-style-type: none;
+}
+
+header .menu nav ul li {
+  display: inline-block;
+  margin: 0 60px;
+}
+
+header .menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.menu nav a:hover {
+  transform: scale(1.05);
+}
+
+header .btnsobrenos button {
+  width: 140px;
+  height: 50px;
+}
+
+header .btnsobrenos button:hover,
+.landpage button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Conteudo */
+
+.knowing{
+  background-color: black;  
+}
+
+.knowcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowingtxt{
+  height: 100%;
+  flex-basis: 50%;
+  color: #fff;
+}
+
+.knowingimg{
+  flex-basis: 50%;
+  margin: 220px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowingimg img{
+  width: 300px;
+  height: 500px;
+  flex-basis: 50%;
+  width: 115%;
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+.knowingtxt h1{
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.knowingtxt p{
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cadsbox{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  margin: 100px 0 150px;
+}
+
+.cadsbox img{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cadsimg img{
+  width: 31rem;
+}
+
+form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+form .formheader{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formheader h1::after{
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: rgb(61, 41, 61);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.inputcontent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.inputbox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.inputbox input{
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #000; 
+}
+
+.inputbox input:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+.inputbox input:focus-visible{
+  outline: 1px solid rgb(235, 235, 240);
+}
+
+.inputbox label, .instruments p{
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.inputbox input::placeholder{
+  color: #000;
+}
+
+.instruments{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentinst{
+  display: flex;
+  align-items: center; 
+}
+
+.contentinst input{
+  margin-right: 20px;
+}
+
+.contentinst label{
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.btncontinue button{
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border: 1.5px solid black; 
+  background-color: transparent;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #000;
+}
+
+.btncontinue button:hover{
+  background-color: #000;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer .footertop button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+footer .footertop button img {
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+}
+
+footer .footertop button:hover {
+  transform: scale(1.05);
+}
+
+footer .footermid {
+  margin: 20px 0;
+}
+
+footer .footermid a {
+  color: white;
+  margin: 0 15px;
+}
+
+footer .footerbot {
+  border-top: 2px solid white;
+}
+
+footer .footerbot p {
+  color: white;
+  margin-top: 10px;
+  grid-column: auto;
+}
+
+@media (max-width: 768px) {
+  .knowcontent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .knowingimg {
+    margin: 50px 0!important;
+  }
+
+  .cadsbox {
+    flex-direction: column;
+    height: auto;
+    margin: 50px 0;
+  }
+  
+  form {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .cadsimg img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .inputcontent {
+    justify-content: center;
+  }
+  
+  .instruments {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .knowingtxt h1 {
+    font-size: 1rem;
+  }
+  
+  .knowingimg img {
+    height: 200px;
+  }
+  
+  .inputbox {
+    width: 100%;
+  }
+}

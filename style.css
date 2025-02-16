@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/* Geral */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header .btnsobrenos button,
+.landpage button {
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Interface */
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+header .menu {
+  padding: 40px;
+}
+
+header .btn {
+  padding: 40px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 100px;
+}
+
+header .menu nav ul {
+  list-style-type: none;
+}
+
+header .menu nav ul li {
+  display: inline-block;
+  margin: 0 60px;
+}
+
+header .menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.menu nav a:hover {
+  transform: scale(1.05);
+}
+
+header .btnsobrenos button {
+  width: 140px;
+  height: 50px;
+}
+
+header .btnsobrenos button:hover,
+.landpage button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Landpage */
+
+section.landpage {
+  height: 98vh;
+  background-image: url(images/Land.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.landpage .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.landpage .landpagetext h1 {
+  font-size: 3em;
+  line-height: 70px;
+  font-weight: 200;
+  padding-top: 200px;
+}
+
+.landpage .landpagetext h1 span {
+  display: block;
+  font-weight: 800;
+}
+
+.landpage .landpagetext p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.landpage .landpagetext p span {
+  display: block;
+}
+
+.landpage button {
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+}
+
+/* AREAS */
+
+section.areas {
+  padding: 80px 0;
+}
+
+.areas .itenscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 60px;
+}
+
+.areas .itenscontainer .imagesareas img {
+  max-width: 420px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 0px slateblue;
+  transition: 0.2s;
+}
+
+.areas .interface .imagesareas img:hover {
+  transform: scale(1.02);
+}
+
+.areas .itenscontainer .textareas h3 {
+  font-size: 3em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.areas .interface .textareas h3 span {
+  font-weight: 300;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer .footertop button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+footer .footertop button img {
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+}
+
+footer .footertop button:hover {
+  transform: scale(1.05);
+}
+
+footer .footermid {
+  margin: 20px 0;
+}
+
+footer .footermid a {
+  color: white;
+  margin: 0 15px;
+}
+
+footer .footerbot {
+  border-top: 2px solid white;
+}
+
+footer .footerbot p {
+  color: white;
+  margin-top: 10px;
+  grid-column: auto;
+}
+
+@media (max-width: 1024px) {
+  /* Header */
+  header .menu nav ul li {
+    margin: 0 30px;
+  }
+  
+  /* Landpage */
+  .landpage .landpagetext h1 {
+    font-size: 2.5em;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Geral */
+  .interface {
+    padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    padding: 20px 0;
+  }
+  
+  header .interface {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  header .menu nav ul li {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  header .logo img {
+    max-width: 80px;
+  }
+
+  /* Landpage */
+  section.landpage {
+    height: auto;
+    padding: 100px 0;
+  }
+  
+  .landpage .landpagetext {
+    text-align: center;
+    padding-top: 0;
+  }
+  
+  .landpage .landpagetext h1 {
+    font-size: 2em;
+    line-height: 50px;
+  }
+
+  /* Areas */
+  .areas .itenscontainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .areas .itenscontainer .imagesareas img {
+    max-width: 100%;
+  }
+  
+  .areas .itenscontainer .textareas {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Landpage */
+  .landpage .landpagetext h1 {
+    font-size: 1.8em;
+    line-height: 40px;
+  }
+  
+  .landpage button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  /* Footer */
+  footer .footertop button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  footer .footertop button img {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,102 @@
+*  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .recovery-container {
+            background-color: #6a1b9a;
+            width: 800px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            box-shadow: 0 0 20px rgba(106, 27, 154, 0.5);
+        }
+
+        .left-side {
+            width: 50%;
+            height: 100%;
+            background: url('Lock.png') center/cover;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .right-side {
+            width: 50%;
+            padding: 40px;
+            color: white;
+        }
+
+        .recovery-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #ccc;
+        }
+
+        .instructions {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+

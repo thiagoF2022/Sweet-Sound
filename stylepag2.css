@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/* Geral */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header .btnsobrenos button, .marketbtn button{
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Interface */
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  padding: 40px 0;
+  position: static;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 9999;
+  background-color: #000000;
+}
+
+header .menu {
+  padding: 40px;
+}
+
+header .btn {
+  padding: 40px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 100px;
+}
+
+header .menu nav ul {
+  list-style-type: none;
+}
+
+header .menu nav ul li {
+  display: inline-block;
+  margin: 0 60px;
+}
+
+header .menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.menu nav a:hover {
+  transform: scale(1.05);
+}
+
+header .btnsobrenos button {
+  width: 140px;
+  height: 50px;
+}
+
+header .btnsobrenos button:hover,
+.market .marketbtn button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.market{
+    background-color: #000000;
+}
+
+.marketcontent{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.markettext{
+    height: 100%;
+    flex-basis: 50%;
+    color: #ffffff;
+}
+
+.markettext h2{
+    font-size: 3.2rem;
+     margin-bottom: 1.5rem;
+}
+
+.markettext p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.marketimg{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketimg img{
+    flex-basis: 50%;
+    width: 115%;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+.marketbtn button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.productbox{
+  justify-content: center;
+}
+
+.productbox h1{
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+section .bgbox{
+    margin: 100px 0 0 200px;
+    width: 60%;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+
+.bgbox img{
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(225, 255, 255, 0.684);
+    background-image: linear-gradient(to right, #471f4b, #644e4e);
+}
+
+.productreal h1{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.productreal input{
+  padding: 0 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.placechord{
+  box-shadow: 1px 1px 2px grey;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.placekeys{
+  box-shadow: 1px 1px 2px grey;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+.placeflutes{
+  box-shadow: 1px 1px 2px grey;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.placepercs{
+  box-shadow: 1px 1px 2px grey;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.chords{
+  display: flex;
+  justify-content: space-between;
+}
+
+.chords2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.keys{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flutes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.percs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.percs2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonuse{
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+
+.buttonuse:hover{
+  background-color: #000000;
+  color: white;
+}
+
+.chords img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.chords2 img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.keys img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.flutes img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.percs img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.percs2 img{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  footer .footertop button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  footer .footertop button img {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
+  
+  footer .footertop button:hover {
+    transform: scale(1.05);
+  }
+  
+  footer .footermid {
+    margin: 20px 0;
+  }
+  
+  footer .footermid a {
+    color: white;
+    margin: 0 15px;
+  }
+  
+  footer .footerbot {
+    border-top: 2px solid white;
+  }
+  
+  footer .footerbot p {
+    color: white;
+    margin-top: 10px;
+    grid-column: auto;
+  }
+
+@media (max-width: 768px) {
+  .marketcontent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .marketimg img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .bgbox {
+    margin: 50px 0!important;
+    width: 100%!important;
+    flex-direction: column;
+    height: auto!important;
+  }
+  
+  .bgbox img {
+    width: 100%!important;
+    margin-bottom: 10px;
+  }
+
+  .chords, .chords2, .keys, .flutes, .percs, .percs2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .placechord, .placekeys, .placeflutes, .placepercs {
+    margin: 20px 0;
+  }
+  
+  .chords img, .chords2 img, .keys img, .flutes img, .percs img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .markettext h2 {
+    font-size: 2rem;
+  }
+  
+  .marketbtn button {
+    width: 100%;
+    max-width: 220px;
+  }
+}
