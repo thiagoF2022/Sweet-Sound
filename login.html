@@ -1,11 +1,11 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sweet Sound</title>
     <link rel="stylesheet" href="loggin.css">
-  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
         
         <div class="right-side">
             <h2>Faça seu login!</h2>
-            <form class="login-form">
+            <form class="login-form" id="loginForm">
                <div class="input-group">
                     <label for="matricula">Matrícula:</label>
                     <input type="text" id="matricula" required>
@@ -32,14 +32,13 @@
                     <input type="password" id="senha" required>
                 </div>
                 <button type="submit">Entrar</button>
-                </a>
                 <div class="links">
                     <a href="forgotp.html">Esqueci a senha</a>
                 </div>
             </form>
         </div>
     </div>
-        <script>
+    <script>
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             sessionStorage.setItem('usuarioLogado', 'true');
