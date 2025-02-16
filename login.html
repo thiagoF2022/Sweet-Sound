@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento Sala de Música - IFRN</title>
+    <title>Login - Sweet Sound</title>
     <link rel="stylesheet" href="loggin.css">
   <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
     
@@ -40,5 +40,12 @@
             </form>
         </div>
     </div>
+        <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            sessionStorage.setItem('usuarioLogado', 'true');
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>
