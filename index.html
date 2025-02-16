@@ -121,5 +121,12 @@
         </section>
       </div>
     </footer>
+        <script>
+  window.onload = function() {
+            if (sessionStorage.getItem('usuarioLogado') !== 'true') {
+                window.location.href = 'login.html';
+            }
+        };
+    </script>
   </body>
 </html>
